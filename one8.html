@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            width:110px;
+            height:55px;
+            border-radius: 7px;
+            background-color: red;
+            color:black;
+            cursor: pointer;
+            
+        }
+    </style>
+</head>
+<body style="text-align: center;">
+    <img style="width:400px" src="https://one8.com/cdn/shop/files/V10020404_01_5a1495af-6b80-408f-b949-60c177a5686b.jpg?v=1781599494&width=1080"/>
+    <h1 id="price_tag">current price: $5499  </h1>
+    <span id="dicount"></span>
+
+    <button onclick="getdiscount()">Discount</button>
+ 
+   <script>
+     function getdiscount(){
+        let a=document.getElementById('price_tag')
+        let b=document.getElementById('dicount')
+        a.style.textDecorationLine='line-through'
+        b.innerHTML='Discount price: $5000'
+    }
+   
+   </script>
+</body>
+</html>
